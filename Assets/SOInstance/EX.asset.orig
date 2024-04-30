@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e28d81aa7c74a6448a1b50cb9c5c7754, type: 3}
-  m_Name: EX
+  m_Script: {fileID: 11500000, guid: a8f71eef22bd432448336e0fb157a11c, type: 3}
+  m_Name: NewBaseAttack
   m_EditorClassIdentifier: 
-  item_Image: {fileID: -1966114836897130506, guid: 22091185919991047a767e94c6c7f13f, type: 3}
-  item_Name: "\uC608\uC2DC"
+  SkillType: 0
+  m_fAttackMag: 1.2

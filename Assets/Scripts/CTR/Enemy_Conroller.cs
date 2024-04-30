@@ -21,7 +21,8 @@ public class Enemy_Conroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        E_Move();
+       // if(GameManager.Instance.g_GameState == GameManager.GameState.INPROGRESS)
+            E_Move();
     }
    
 
