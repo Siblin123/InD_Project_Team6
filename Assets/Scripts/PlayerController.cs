@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public float g_fspeed;
     public float g_frun_Speed;
     public LayerMask g_llayer;
-    public GameManager _instance;
+   // public GameManager _instance;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
             else if (Input.GetButtonDown("Jump") && m_scanObject != null) // 점프(스페이스바) 버튼이 눌렸고 스캔된 객체가 있는지 확인
             {
                 // _instance 객체의 Act 메서드를 호출하고 스캔된 객체를 전달
-                _instance.Act(m_scanObject);
+             //   _instance.Act(m_scanObject);
             }
         }
         else // 충돌체가 없는 경우
@@ -77,12 +77,16 @@ public class PlayerController : MonoBehaviour
 
     private void Movement()
     {
-        m_fx = _instance.isAct ? 0 : Input.GetAxisRaw("Horizontal");
-        m_fy = _instance.isAct ? 0 : Input.GetAxisRaw("Vertical");
+        // 아이템 인벤토리, 도깨비 보관소(길들인 모든 도꺠비), 도깨비 설명창, 라인업 도깨비, 
+        // m_fx = _instance.isAct ? 0 : Input.GetAxisRaw("Horizontal");
+        //m_fy = _instance.isAct ? 0 : Input.GetAxisRaw("Vertical");
+
+        m_fx = Input.GetAxisRaw("Horizontal");
+        m_fy =  Input.GetAxisRaw("Vertical");
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            animator.SetBool("Walk", false);
+           animator.SetBool("Walk", false);
             Run();
         }
         else
@@ -113,7 +117,8 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
         }
         Vector2 movement = new Vector2(m_fx, m_fy) * g_fspeed * Time.deltaTime;
-        m_Rigidbody2D.MovePosition(m_Rigidbody2D.position + movement); // 플레이어와 오브젝트 충돌시 떨림현상 방지 
+        transform.Translate(movement);
+       // m_Rigidbody2D.MovePosition(m_Rigidbody2D.position + movement); // 플레이어와 오브젝트 충돌시 떨림현상 방지 
     }
 
     void Run()
@@ -137,6 +142,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector2 movement = new Vector2(m_fx, m_fy).normalized * g_frun_Speed * Time.deltaTime;
-        m_Rigidbody2D.MovePosition(m_Rigidbody2D.position + movement); // 플레이어와 오브젝트 충돌시 떨림현상 방지 
+       transform.Translate(movement);
+          // m_Rigidbody2D.MovePosition(m_Rigidbody2D.position + movement); // 플레이어와 오브젝트 충돌시 떨림현상 방지 
     }
 }

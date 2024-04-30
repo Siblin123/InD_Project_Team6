@@ -1639,11 +1639,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetUnitTable: {fileID: 11400000, guid: 4c38281b1b7b02043af9e5e9d5c1c78a, type: 2}
-  m_AssetItemTable: {fileID: 11400000, guid: 8eb3cce7129dd584fa43a4fb508b2744, type: 2}
-  m_TalkManager: {fileID: 157132140}
-  m_talkPanel: {fileID: 1423464580}
-  m_portraitImg: {fileID: 507144564}
-  m_talkText: {fileID: 392257883}
+  m_AssetItemTable: {fileID: 0}
+  m_TalkManager: {fileID: 0}
+  m_talkPanel: {fileID: 0}
+  m_portraitImg: {fileID: 0}
+  m_talkText: {fileID: 0}
   m_scanObject: {fileID: 0}
   isAct: 0
   talkIndex: 0
@@ -2055,9 +2055,9 @@ GameObject:
   - component: {fileID: 484561810}
   - component: {fileID: 484561811}
   - component: {fileID: 484561812}
-  - component: {fileID: 484561815}
   - component: {fileID: 484561814}
   - component: {fileID: 484561813}
+  - component: {fileID: 484561815}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2197,14 +2197,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 484561809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2301d682abe0195458d545374e5db226, type: 3}
+  m_Script: {fileID: 11500000, guid: 247aa0bb4387c2f488e6c715e53ea141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g_fspeed: 5
-  g_frun_Speed: 7
+  g_fspeed: 10
+  g_frun_Speed: 15
   g_llayer:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 128
   _instance: {fileID: 401274059}
 --- !u!1 &487608067
 GameObject:
