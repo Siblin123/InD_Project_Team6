@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/SunnyLand Artwork/Environment/Tileset.meta
 guid: 84d631783976cc8408ecb94d462f90cc
 ========
 guid: 403552f761f88034e8834f0902b3b7d5
 >>>>>>>> Develop:Assets/Resources/Images/Unit.meta
+=======
+guid: f2b645eff4161c948a381d150c0904d6
+>>>>>>> 84c141584cb5ed841e21f33acf6c382cd41f3dca
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

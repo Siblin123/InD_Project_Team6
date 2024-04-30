@@ -1,9 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/SunnyLand Artwork/Music tracks.meta
 guid: 62bb686e4d7cda547ae0a4c57694c4da
 ========
+=======
+>>>>>>> 84c141584cb5ed841e21f33acf6c382cd41f3dca
 guid: c32dc9ee9ac5880428ac0230c1a23a95
->>>>>>>> Develop:Assets/Scripts/UI/Dialog.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

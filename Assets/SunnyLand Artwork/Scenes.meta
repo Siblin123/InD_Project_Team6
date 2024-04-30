@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/SunnyLand Artwork/Scenes.meta
 guid: 8ecf6d20ca5bfb940936d5a5444a1e78
 ========
 guid: 0b319171c9182d247835b6bb56ef1387
 >>>>>>>> Develop:Assets/Scripts/UI/Option.meta
+=======
+guid: 2fbfde5acb83dcf45971dff2335ebcb6
+>>>>>>> 84c141584cb5ed841e21f33acf6c382cd41f3dca
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
